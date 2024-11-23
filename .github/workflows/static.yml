@@ -1,0 +1,289 @@
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- Header Logo -->
+    <header>
+        <div class="header_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 d-flex justify-content-center">
+                       
+<div class="logo text-center text-white mt-4">
+    <h2>Logo</h2>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tagline With Content -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="tagline p-4 mt-4">
+                        <h1 class="text-center">Launching Soon – Be Prepared!</h1>
+                    </div>
+                    <div class="content p-4">
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, veritatis ab ipsum iusto blanditiis ut iure nulla ipsam a tempora incidunt, quam maiores sequi excepturi quidem alias repellat natus labore?</p>
+                    </div>
+                </div>
+
+                <!-- Countdown Timer -->
+                <div class="col-xl-12">
+                    <div class="wrapper">
+                        <div class="countdown-container">
+                            <div>
+                                <p id="days" class="big-text">0</p>
+                                <span>Days</span>
+                            </div>
+                            <div>
+                                <p id="hours" class="big-text">0</p>
+                                <span>Hours</span>
+                            </div>
+                            <div>
+                                <p id="min" class="big-text">0</p>
+                                <span>Min</span>
+                            </div>
+                            <div>
+                                <p id="sec" class="big-text">0</p>
+                                <span>Sec</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="col-xl-12 d-flex justify-content-center p-5">
+                    <div class="button-wrapper">
+                        <div class="about-btn p-2">
+                            <button class="btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas" aria-controls="sidebarOffcanvas">About Us <i class="fa-solid fa-user"></i></button>
+                        </div>
+                        
+                        
+                        <div class="subscription-btn p-2">
+                            <button class="btn btn-info">Notify me <i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Icons -->
+    <footer class="text-center text-white">
+        <div class="container p-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-info btn-floating text-white m-1" href="#!" role="button"
+                    ><i class="fab fa-facebook-f"></i
+                ></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-info btn-floating text-white m-1" href="#!" role="button"
+                    ><i class="fab fa-twitter"></i
+                ></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-info btn-floating text-white m-1" href="#!" role="button"
+                    ><i class="fab fa-google"></i
+                ></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-info btn-floating text-white m-1" href="#!" role="button"
+                    ><i class="fab fa-instagram"></i
+                ></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-info btn-floating text-white m-1" href="#!" role="button"
+                    ><i class="fab fa-linkedin-in"></i
+                ></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-info btn-floating text-white m-1" href="#!" role="button"
+                    ><i class="fab fa-github"></i
+                ></a>
+        </div>
+    </footer>
+
+
+<style>
+body{
+    background: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:top;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+/* Logo */  
+.header_area img{
+    width: 200px;
+    margin-top: 150px;
+}
+
+/* Body Content */  
+.tagline h1{
+    font-family: 'Roboto Serif', serif;
+    font-weight: 700;
+    border-top: 1px solid #00dcff;
+    border-bottom: 1px solid #00dcff;
+    width: 50%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 36px;
+}
+.content p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+/* Countdown Timer */  
+.countdown-timer{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    padding-top: 17%;
+    width: 1070px;
+}
+.timer{
+    width: 330px;
+    margin: 0 auto;
+    height: 110px;
+}
+.countdown-container{
+    display:flex;
+}
+.big-text{
+    font-size:4rem;
+    font-family: cursive;
+}
+ 
+.wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.countdown-container > div{
+    margin:0 2rem;
+    text-align: center;
+    border:2px solid #00dcff;
+    padding:0px 20px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    color:#fff;
+    min-width:150px;
+}
+.countdown-container span{
+    background: #00215282;
+    padding: 14px;
+    border: 1px solid #00dcff;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+}
+  @media (max-width:992px){
+    .countdown-container > div{
+      margin:0 1rem;
+    }
+  }
+  @media (max-width:767px){
+    .countdown-container{
+      flex-wrap: wrap;
+    }
+    .countdown-container > div{
+      margin:1rem auto;
+      max-width:150px;
+    }
+    .title{
+      font-size: 1.5rem;
+      line-height: 3.5rem;
+      margin:10px 0px;
+    }
+    .title span{
+      font-size: 2rem;
+      letter-spacing: 1rem;
+    }
+  }
+  
+/* Buttons */  
+
+.button-wrapper{
+    display: flex;
+    margin-right: 10px;
+}
+.button-wrapper button{
+    background: transparent;
+    color: white;
+    padding: 10px 20px 14px 20px;
+    font-family: 'Roboto Serif', serif;
+    font-weight: 600;
+
+}
+
+
+/* Sidebar Offcanvas */
+#sidebarOffcanvas{
+  background: #0032bf47;
+}
+.offcanvas-body h3{
+  font-size: 25px;
+  font-family: 'Roboto Serif', serif;
+  color: #fff;
+  font-weight: 700;
+}
+.offcanvas-body p{
+  text-align: justify;
+  color: #fff;
+}
+.progress-bar{
+  background: linear-gradient(45deg, #00dcff, transparent);
+  color: #000;
+  font-weight: 600;
+}
+.wrapper-ceo img{
+  width: 30%;
+  border: 4px solid #00dcff;
+}
+
+
+</style>
+
+<script>
+let daysItem = document.querySelector("#days");
+let hoursItem = document.querySelector("#hours");
+let minItem = document.querySelector("#min");
+let secItem = document.querySelector("#sec");
+
+
+let countDown = () => {
+  let futureDate = new Date("1 Jan 2030");
+  let currentDate = new Date();
+  let myDate = futureDate - currentDate;
+  //console.log(myDate);
+
+  let days = Math.floor(myDate / 1000 / 60 / 60 / 24);
+
+  let hours = Math.floor(myDate / 1000 / 60 / 60) % 24;
+
+  let min = Math.floor(myDate / 1000 / 60) % 60;
+
+  let sec = Math.floor(myDate / 1000) % 60;
+
+  daysItem.innerHTML = days;
+  hoursItem.innerHTML = hours;
+  minItem.innerHTML = min;
+  secItem.innerHTML = sec;
+}
+
+countDown()
+
+setInterval(countDown, 1000)
+</script>
